@@ -2,6 +2,18 @@
 
 This project fetches stock data from Alpha Vantage API and visualizes it using a web interface. The data is stored in a MySQL database and displayed using interactive charts.
 
+## Features
+
+- **Real-time Data**: Fetches stock price data from Alpha Vantage API every 5 minutes
+- **Data Persistence**: Stores the fetched data in a MySQL database for historical analysis
+- **Interactive Visualization**: Displays stock price data using interactive Highcharts
+- **Auto-updating**: Chart updates automatically every minute to reflect the latest stock prices
+- **Responsive Design**: Clean, modern interface that works well on both desktop and mobile devices
+- **RESTful API**: Backend powered by Flask for efficient API requests and database interactions
+- **Error Handling**: Robust error handling for API and database operations
+- **Environment Configuration**: Easy configuration using environment variables
+- **Database Management**: Efficient data storage and retrieval using SQLAlchemy ORM
+
 ## Prerequisites
 
 - Python 3.11 or higher
