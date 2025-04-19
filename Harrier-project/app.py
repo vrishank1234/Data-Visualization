@@ -26,7 +26,7 @@ def get_data():
     df = pd.read_sql("SELECT * FROM stock_data", engine)
     df["timestamp"] = pd.to_datetime(df["timestamp"])
     
-    # Make sure these columns exist and are correctly typed
+    # Convert columns to float
     df["open"] = df["open"].astype(float)
     df["high"] = df["high"].astype(float)
     df["low"] = df["low"].astype(float)
