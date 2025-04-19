@@ -12,7 +12,7 @@ This project fetches stock data from Alpha Vantage API and visualizes it using a
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/vrishank1234/Data-Visualization
    cd Data-Visualization/Harrier-project
    ```
 
