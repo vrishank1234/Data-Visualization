@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Candlestick Chart</title>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+</head>
+<body>
+    <div id="container" style="width:100%; height:600px;"></div>
+
+    <script>
+        fetch("/data")
+            .then(response => response.json())
+            .then(data => {
+                Highcharts.stockChart('container', {
+                    rangeSelector: {
+                        selected: 1
+                    },
+                    title: {
+                        text: 'Stock Price - Candlestick'
+                    },
+                    series: [{
+                        type: 'candlestick',
+                        name: 'Stock',
+                        data: data,
+                        tooltip: {
+                            valueDecimals: 2
+                        }
+                    }]
+                });
+            });
+    </script>
+</body>
+</html>
